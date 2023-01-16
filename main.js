@@ -1,4 +1,3 @@
-// fix the error
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('json-form');
   const input = document.getElementById('json-input');
