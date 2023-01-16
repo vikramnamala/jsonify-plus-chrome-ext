@@ -1,0 +1,65 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+  --link-color: blue;
+  --text-box-background-color: white;
+  --text-box-text-color: black;
+  --text-box-border-color: gray;
+  /* Light mode styles */
+  --button-background-color: white;
+  --button-text-color: black;
+}
+
+:root[data-theme="dark"] {
+  --background-color: #200F21;
+  --text-color: #D8D8D8;
+  --link-color: lightblue;
+  --text-box-background-color: #382039;
+  --text-box-text-color: white;
+  --text-box-border-color: gray;
+    /* Dark mode styles */
+  --button-background-color: #F638DC;
+  --button-text-color: white;
+}
+
+
+body {
+  font-family: sans-serif;
+  width: 250px; /* increase the width to 250 pixels */
+  height: 100%;
+  margin: 20 left; /* center the body element */
+  margin: 20 right; /* center the body element */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+
+form {
+  margin-bottom: 20px;
+  margin-right: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  background-color: var(--text-box-background-color);
+  color: var(--text-box-text-color);
+  border: 1px solid var(--text-box-border-color);
+}
+
+#result {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+  width: 100%;
+  height: 35px;
+  background-color: var(--button-background-color);
+  color: var(--button-text-color);
+}

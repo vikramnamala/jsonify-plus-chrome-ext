@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "JSON to CSV Converter",
+  "description": "Convert JSON data feeds to CSV format",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "clipboardWrite"
+  ]
+}

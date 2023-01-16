@@ -1,0 +1,25 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON to CSV Converter</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>JSON to CSV</h1>
+    <form id="json-form">
+      <label for="json-input">JSON Data Feed:</label><br>
+      <textarea id="json-input" rows="10" cols="50"></textarea><br>
+      <button type="submit">Convert to CSV</button>
+    </form>
+    <div id="result">
+      <p>Result:</p>
+      <textarea id="csv-output" rows="10" cols="50"></textarea>
+      <button id="copy-button">Copy to clipboard</button>
+      <button id="download-button">Download as file</button>
+    </div>
+      <script src="papaparse.min.js"></script>
+      <script src="jsonlint.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
